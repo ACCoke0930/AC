@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AC</title>
+    <title>ACTV</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
@@ -11,7 +11,7 @@
     <span class="menu-icon">☰</span>
 
     <header>
-        <h1>AC</h1>
+        <h1>ACTV</h1>
     </header>
 
     <nav id="sidebar" class="sidebar">
@@ -22,9 +22,10 @@
             <a href="javascript:void(0)" data-section="test">测试</a>
             <a href="javascript:void(0)" data-section="apple-history">苹果公司的历史</a>
         </div>
+        <!-- 侧边栏底部的固定按钮 -->
         <div class="sidebar-bottom-buttons">
-            <a href="/login" class="login-button">Login</a>
-            <a href="/register" class="signup-button">Sign Up</a>
+            <a href="login.html" class="login-button">Login</a>
+            <a href="#" class="signup-button">Sign Up</a>
         </div>
     </nav>
 
@@ -67,20 +68,6 @@
         </section>
     </div>
 
-    <script>
-        // 登录状态检查
-        if (window.location.pathname === '/index.html' && !sessionStorage.getItem('loggedIn')) {
-            window.location.href = '/login';
-        }
-
-        function logout() {
-            sessionStorage.removeItem('loggedIn');
-            window.location.href = '/login';
-        }
-    </script>
-
     <script src="scripts.js"></script>
-    <!-- 暂时移除 Cloudflare 脚本以避免干扰 -->
-    <!-- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;...})();</script> -->
 </body>
 </html>
